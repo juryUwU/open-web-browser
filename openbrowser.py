@@ -1,12 +1,4 @@
 import webbrowser
-import pyttsx3
-
-robot_mouth = pyttsx3.init()
-robot_mouth = pyttsx3.init()
-voices = robot_mouth.getProperty('voices')
-robot_mouth.setProperty('voice', voices[17].id)
-robot_mouth.say("hello")
-robot_mouth.runAndWait()
 def yt():
     webbrowser.open('https://www.youtube.com')
 def fb():
@@ -22,7 +14,7 @@ def yourweb(WEB):
     print('\033[0;32mWeb bạn muốn:')
     if WEB == "youtube":
         print("youtube")
-        robot_mouth.say("hello")
+       
         return yt()
     elif WEB == "facebook":
         print("facebook")
